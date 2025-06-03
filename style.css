@@ -1,0 +1,51 @@
+body{
+    background: #f3f0f0;
+}
+
+.container{
+    max-width: 600px;
+}
+
+input[type=text],
+input[type=text]:focus{
+    color: #fff;
+    border: none;
+    background: rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+}
+
+.todos li{
+    background: #464647;
+}
+
+.todos li:hover{
+    background: #6b6b6d;
+}
+
+.delete{
+    cursor: pointer;
+}
+
+.delete:hover {
+        color: crimson;
+        cursor: pointer;
+}
+
+.filtered {
+    display: none !important;
+}
+
+@keyframes fadeSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.todo-enter {
+  animation: fadeSlideIn 0.3s ease-out;
+}
